@@ -11,16 +11,12 @@ pipeline {
                 sh 'php --version'
             }
         }
-    }
-    stages {
-        stage('Compos install') {
+    stage('Compos install') {
             steps {
                 sh 'composer install'
             }
         }
-    }
-     stages {
-        stage('TEST') {
+    stage('TEST') {
             steps {
                 sh 'vendor/bin/phpunit'
             }

@@ -5,7 +5,7 @@ pipeline {
       } 
     }
     stages {
-        stage('Verification Version') {
+        stage('Verification') {
             steps {
                 sh 'php --version'
             }

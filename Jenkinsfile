@@ -12,4 +12,18 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('Compos install') {
+            steps {
+                sh 'composer install'
+            }
+        }
+    }
+     stages {
+        stage('TEST') {
+            steps {
+                sh 'vendor/bin/phpunit'
+            }
+        }
+    }
 }

@@ -1,14 +1,14 @@
 pipeline {
     agent { 
-      docker { 
-        image 'php:8.4.8-alpine3.22'
-        label 'agent_docker'
-      } 
+        docker { 
+            image 'python:3.13.5-alpine3.22'
+            label 'agent_docker'
+        } 
     }
     stages {
-        stage('Verification') {
+        stage('build') {
             steps {
-                sh 'php --version'
+                sh 'python --version'
             }
         }
     }

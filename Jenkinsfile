@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Commandes pour installer Composer
-                    sh 'apt-get update && apt-get install -y curl unzip && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer'
+                    sh 'apt-get update'
                 }
             }
         }

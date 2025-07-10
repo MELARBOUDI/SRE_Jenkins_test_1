@@ -15,13 +15,13 @@ pipeline {
         }
     stage('Compos install') {
             steps {
-                #sh 'composer install'
+                //sh 'composer install'
                 sh 'php --version'
             }
         }
     stage('TEST') {
             steps {
-                #sh 'vendor/bin/phpunit'
+                //sh 'vendor/bin/phpunit'
                 sh 'php --version'
             }
         }
